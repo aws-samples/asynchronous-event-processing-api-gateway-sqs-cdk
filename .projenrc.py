@@ -5,12 +5,13 @@ from projen.awscdk import (
     AwsCdkPythonApp,
 )
 
-__version__ = "1.0.0"
+__version__ = "1.0.1"
 project = AwsCdkPythonApp(
     auto_merge=False,
     author_email="mariemkt@amazon.de",
     author_name="Mariem Kthiri",
     cdk_version="2.61.0",
+    cdk_version_pinning=True,
     commit_generated=False,
     description="Asynchronous Processing with API Gateway and SQS",
     dev_deps=[
